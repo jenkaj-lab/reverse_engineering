@@ -13,7 +13,7 @@
 
 ## Seen In
 
-- [[MB-0001]]
+- [[Sample 0001]]
 
 ## Notes
 

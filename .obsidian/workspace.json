@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Case Notes/Sample 0003 - LoveLetter.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Sample 0003 - LoveLetter"
             }
           }
         ]
@@ -194,12 +194,13 @@
   },
   "active": "9680a0811ccb63d7",
   "lastOpenFiles": [
-    "Templates/Case Note.md",
     "README.md",
-    "Case Notes/MB-0001.md",
+    "Case Notes/Sample 0003 - LoveLetter.md",
+    "Templates/Case Note.md",
+    "Case Notes/Sample 0001.md",
     "Templates/Report.md",
     "Templates/Malware Family.md",
-    "Case Notes/MB-0002.md",
+    "Case Notes/Sample 0002.md",
     "Case Notes/MB-0003.md",
     "Case Notes/test.md",
     "Malware Analysis Workflow.excalidraw.md",

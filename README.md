@@ -27,6 +27,7 @@ This is my portfolio for malware analysis
 **Browser Bookmarks/Favourites**
 - Malware Bazaar
 - VirusTotal
+- ytisf/theZoo (Github)
 
 **Important Extras**
 - SPICE Guest Tools (clipboard functionality & dynamic VM resizing)
