@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templates/Case Note.md",
+                "file": "Case Notes/MB-0003.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Case Note"
+              "title": "MB-0003"
             }
           }
         ]
@@ -195,18 +195,19 @@
   },
   "active": "9680a0811ccb63d7",
   "lastOpenFiles": [
-    "Malware Analysis Workflow.excalidraw.md",
+    "Case Notes/MB-0002.md",
+    "Case Notes/MB-0001.md",
+    "Case Notes/MB-0003.md",
     "Templates/Case Note.md",
+    "Case Notes/test.md",
+    "Malware Analysis Workflow.excalidraw.md",
     "Templates/Malware Family.md",
     "Templates/YARA Rule.md",
-    "Case Notes/test.md",
-    "Case Notes/MB-0002.md",
     "Templates/Tool.md",
     "Tools",
     "Templates/Technique.md",
     "Templates/Report.md",
     "Templates/IOC.md",
-    "Case Notes/MB-0001.md",
     "Templates/Analysis Session.md",
     "Attachments/Drawing 2026-07-14 22.48.28.excalidraw 2026-07-14 22.48.43.excalidraw.md",
     "Malware Analysis Workflow.md",
