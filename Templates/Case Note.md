@@ -9,11 +9,9 @@ tags:
 ---
 
 # Analysis
----
 The analysis stage is used to gather information and document findings using static and dynamic analysis techniques.
 
 ## Metadata
----
 
 | Field                 | Value |
 | --------------------- | ----- |
@@ -51,9 +49,7 @@ Interesting strings:
 
 
 ## Dynamic Analysis
----
 ### Behavioral Analysis
----
 #### Process Tree
 #### File Activity
 #### Registry Activity
@@ -65,7 +61,6 @@ Interesting strings:
 ||||
 
 ### Deep Analysis
----
 #### Disassembly
 #### Decompilation
 #### Memory Analysis
@@ -77,7 +72,6 @@ Interesting strings:
 ||||
 
 # Summary
----
 #### Sample Classification
 #### Challenges / Difficulty Level
 #### Lessons Learned
