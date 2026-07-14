@@ -1,9 +1,9 @@
 ---
-case: 
-date: 
+case:
+date:
 source:
 analyst:
-family:
+type:
 tags:
   - malware
 ---

@@ -8,6 +8,6 @@
 
 ## Seen In
 
-- [[Sample 0001]]
+- [[C0001]]
 
 ## Notes
