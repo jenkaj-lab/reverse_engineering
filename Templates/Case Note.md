@@ -26,7 +26,7 @@ The analysis stage is used to gather information and document findings using sta
 | Import Hash (Imphash) |       |
 
 ## Static Analysis
----
+
 #### FLOSS (strings)
 Interesting strings:
 ```
