@@ -16,7 +16,7 @@
   "loadJapaneseFonts": false,
   "loadKoreanFonts": false,
   "compress": true,
-  "decompressForMDView": false,
+  "decompressForMDView": true,
   "onceOffCompressFlagReset": true,
   "onceOffGPTVersionReset": true,
   "autosave": true,
@@ -1008,7 +1008,7 @@
         "rules": [
           {
             "shift": false,
-            "ctrl_cmd": false,
+            "ctrl_cmd": true,
             "alt_opt": false,
             "meta_ctrl": false,
             "result": "active-pane"
