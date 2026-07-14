@@ -2,12 +2,15 @@ This is my portfolio for malware analysis
 
 # Virtual Machines
 ## MalWin
-OS: Windows 10
-Storage: 100GB
-RAM: 8GB
-Cores: 2
 
-Tools:
+| Specifications   | Value      |
+| ---------------- | ---------- |
+| Operating System | Windows 10 |
+| Storage          | 100GB      |
+| RAM              | 8GB        |
+| Cores            | 2          |
+
+**Tools**
 - SysInternals
 - PEStudio
 - Detect It Easy (DIE)
@@ -25,5 +28,5 @@ Tools:
 - Malware Bazaar
 - VirusTotal
 
-Important Extras:
+**Important Extras**
 - SPICE Guest Tools (clipboard functionality & dynamic VM resizing)
