@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Case Notes/MB-0003.md",
+                "file": "Templates/Report.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MB-0003"
+              "title": "Report"
             }
           }
         ]
@@ -189,19 +189,18 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "templater-obsidian:Templater": false,
       "obsidian-git:Open Git source control": false
     }
   },
   "active": "9680a0811ccb63d7",
   "lastOpenFiles": [
-    "Case Notes/MB-0002.md",
     "Case Notes/MB-0001.md",
-    "Case Notes/MB-0003.md",
+    "Templates/Malware Family.md",
     "Templates/Case Note.md",
+    "Case Notes/MB-0002.md",
+    "Case Notes/MB-0003.md",
     "Case Notes/test.md",
     "Malware Analysis Workflow.excalidraw.md",
-    "Templates/Malware Family.md",
     "Templates/YARA Rule.md",
     "Templates/Tool.md",
     "Tools",
