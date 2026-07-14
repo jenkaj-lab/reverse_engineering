@@ -11,11 +11,11 @@ This is my portfolio for malware analysis
 | Cores            | 2          |
 
 **Tools**
-- SysInternals
+- SysInternals Suite
 - PEStudio
 - Detect It Easy (DIE)
 - FLOSS
-- Ghidra
+- Ghidra (+ Java JDK)
 - x64dbg
 - Wireshark
 - Regshot
