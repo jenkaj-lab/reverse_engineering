@@ -7,6 +7,7 @@ type:
 tags:
   - malware
 ---
+# Notes
 
 # Analysis
 The analysis stage is used to gather information and document findings using static and dynamic analysis techniques.
@@ -34,9 +35,9 @@ Interesting strings:
 ```
 
 #### Imports/Exports
-|Import|Purpose|Suspicious|
-|---|---|---|
-||||
+| Import | Suspicious reasons |
+| ------ | ------------------ |
+|        |                    |
 #### File Structure
 - Architecture:
 - Entry Point:

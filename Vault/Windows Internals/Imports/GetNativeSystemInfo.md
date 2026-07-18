@@ -1,0 +1,4 @@
+Retrieves information about the current system to an application running under [WOW64](https://learn.microsoft.com/en-us/windows/desktop/WinProg64/running-32-bit-applications). If the function is called from a 64-bit application, it is equivalent to the [GetSystemInfo](https://learn.microsoft.com/en-us/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getsysteminfo) function. If the function is called from an x86 or x64 application running on a 64-bit system that does not have an Intel64 or x64 processor (such as ARM64), it will return information as if the system is x86 only if x86 emulation is supported (or x64 if x64 emulation is also supported).
+
+Reference:
+https://learn.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getnativesysteminfo
