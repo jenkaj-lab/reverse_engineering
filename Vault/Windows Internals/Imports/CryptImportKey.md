@@ -1,0 +1,4 @@
+The **CryptImportKey** function transfers a [cryptographic key](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/c-gly) from a [key BLOB](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/k-gly) into a [cryptographic service provider](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/c-gly) (CSP). This function can be used to import an [Schannel](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/s-gly) [session key](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/s-gly), regular session key, [public key](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/p-gly), or [public/private key pair](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/p-gly). For all but the public key, the key or key pair is encrypted.
+
+Reference:
+https://learn.microsoft.com/en-us/windows/win32/api/wincrypt/nf-wincrypt-cryptimportkey

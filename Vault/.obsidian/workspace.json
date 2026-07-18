@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "cce7816e70e04289",
+    "type": "split",
+    "children": [
+      {
+        "id": "c33a9274d8863b16",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4fbe03d049053aa1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Case Notes/C0004 - Medusa.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "C0004 - Medusa"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1224683ed8818c53",
+    "type": "split",
+    "children": [
+      {
+        "id": "d2c68c51cd282dce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cfb7a965ac0c4587",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e898db709eca77c2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1faa10112b2f6421",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "dfa15a56102cf5fc",
+    "type": "split",
+    "children": [
+      {
+        "id": "0d9c9957951a3439",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d79b2e749cdc84e3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "ffba94d00b23e75a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "f17b0ec9206c7fb9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "625c05ff19ab4f30",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "bca30f30c4eaceee",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Malware Analysis Workflow.excalidraw.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Malware Analysis Workflow.excalidraw"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "4fbe03d049053aa1",
+  "lastOpenFiles": [
+    "Windows Internals/Imports/CryptAcquireContextW.md",
+    "Case Notes/C0004 - Medusa.md",
+    "Windows Internals/Imports/CryptGenRandom.md",
+    "Windows Internals/Imports/CryptReleaseContext.md",
+    "Windows Internals/Imports/CryptGenKey.md",
+    "Windows Internals/Imports/CryptExportKey.md",
+    "Windows Internals/Imports/CryptImportKey.md",
+    "Windows Internals/Imports/CryptDestroyKey.md",
+    "Windows Internals/Imports/CryptGetKeyParam.md",
+    "Windows Internals/Imports/CryptEncrypt.md",
+    "Windows Internals/Windows Restart Manager.md",
+    "Malware Analysis Workflow.excalidraw.md",
+    "Windows Internals/Imports/RmRegisterResources.md",
+    "Attachments/Pasted image 20260718001414.png",
+    "Attachments/Pasted image 20260718001403.png",
+    "Windows Internals/Imports/CryptBinaryToStringW.md",
+    "Windows Internals/Imports/CryptBinaryToStringA.md",
+    "Windows Internals/Imports/CryptStringToBinaryW.md",
+    "Windows Internals/Imports/CryptStringToBinaryA.md",
+    "Case Notes/C0001.md",
+    "Case Notes/C0003 - LoveLetter.md",
+    "Case Notes/C0002.md",
+    "Windows Internals/Imports/RmShutdown.md",
+    "Windows Internals/Imports/RmGetList.md",
+    "MITRE ATT&CK/Virtualization or Sandbox Evasion.md",
+    "MITRE ATT&CK/Debugger Evasion.md",
+    "MITRE ATT&CK/Disable or Modify Tools.md",
+    "MITRE ATT&CK/Process Discovery.md",
+    "Windows Internals/Imports",
+    "Imports",
+    "Vault/Windows Internals/DLLs",
+    "Vault/Attachments/Pasted image 20260714184457.png",
+    "Vault/Attachments/Pasted image 20260714184357.png",
+    "Vault/Attachments/Pasted image 20260714173320.png",
+    "Vault/Attachments/Pasted image 20260714165142.png",
+    "Vault/Attachments/Pasted image 20260714164432.png",
+    "Vault/Attachments/Pasted image 20260713222553.png",
+    "Vault/Attachments/Pasted image 20260713221719.png",
+    "Vault/YARA Rules",
+    "Vault/Windows Internals",
+    "Vault/Tools",
+    "Vault/Templates",
+    "Vault/Techniques",
+    "Vault/Reports",
+    "Vault/Malware Families"
+  ]
+}

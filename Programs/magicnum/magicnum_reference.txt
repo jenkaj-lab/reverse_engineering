@@ -1,0 +1,4 @@
+7f454c46|Executable Linux Format (ELF)
+4d5a|Windows Portable Executable (PE)
+504b|ZIP Archive
+25504446|PDF Document

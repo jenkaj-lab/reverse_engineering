@@ -1,0 +1,6 @@
+The **CryptExportKey** function exports a [cryptographic key](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/c-gly) or a key pair from a [cryptographic service provider](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/c-gly) (CSP) in a secure manner.
+
+A handle to the key to be exported is passed to the function, and the function returns a [key BLOB](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/k-gly). This key BLOB can be sent over a nonsecure transport or stored in a nonsecure storage location. This function can export an [Schannel](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/s-gly) session key, regular [session key](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/s-gly), [public key](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/p-gly), or [public/private key pair](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/p-gly). The key BLOB to export is useless until the intended recipient uses the [CryptImportKey](https://learn.microsoft.com/en-us/windows/desktop/api/wincrypt/nf-wincrypt-cryptimportkey) function on it to import the key or key pair into a recipient's CSP.
+
+Reference:
+https://learn.microsoft.com/en-us/windows/win32/api/wincrypt/nf-wincrypt-cryptexportkey

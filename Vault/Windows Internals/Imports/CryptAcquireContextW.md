@@ -1,0 +1,8 @@
+The **CryptAcquireContext** function is used to acquire a handle to a particular [key container](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/k-gly) within a particular [cryptographic service provider](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/c-gly) (CSP). This returned handle is used in calls to [CryptoAPI](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/c-gly) functions that use the selected CSP.
+
+This function first attempts to find a CSP with the characteristics described in the _dwProvType_ and _pszProvider_ parameters. If the CSP is found, the function attempts to find a key container within the CSP that matches the name specified by the _pszContainer_ parameter. To acquire the [context](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/c-gly) and the key container of a [private key](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/p-gly) associated with the [public key](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/p-gly) of a certificate, use [CryptAcquireCertificatePrivateKey](https://learn.microsoft.com/en-us/windows/desktop/api/wincrypt/nf-wincrypt-cryptacquirecertificateprivatekey).
+
+With the appropriate setting of _dwFlags_, this function can also create and destroy key containers and can provide access to a CSP with a temporary key container if access to a private key is not required.
+
+Reference:
+https://learn.microsoft.com/en-us/windows/win32/api/wincrypt/nf-wincrypt-cryptacquirecontextw

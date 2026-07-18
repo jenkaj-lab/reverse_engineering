@@ -31,3 +31,4 @@ This is my portfolio for malware analysis
 
 **Important Extras**
 - SPICE Guest Tools (clipboard functionality & dynamic VM resizing)
+- Visual Studio Build Tools (Desktop development with C++) with MSVC v143 or above, C++ CMake tools for Windows, and Windows 10 or 11 SDK

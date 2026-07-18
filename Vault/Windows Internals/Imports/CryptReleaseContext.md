@@ -1,0 +1,6 @@
+The **CryptReleaseContext** function releases the handle of a [cryptographic service provider](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/c-gly) (CSP) and a [key container](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/k-gly). At each call to this function, the [reference count](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/r-gly) on the CSP is reduced by one. When the reference count reaches zero, the [context](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/c-gly) is fully released and it can no longer be used by any function in the application.
+
+An application calls this function after finishing the use of the CSP. After this function is called, the released CSP handle is no longer valid. This function does not destroy [key containers](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/k-gly) or [key pairs](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/k-gly).
+
+Reference:
+https://learn.microsoft.com/en-us/windows/win32/api/wincrypt/nf-wincrypt-cryptreleasecontext
