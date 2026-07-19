@@ -168,15 +168,16 @@ Pretty standard sections overall: .text, .rdata, .data, .pdata, .rsrc, .reloc
 SETTINGS: unknown signature
 
 #### Packers / Obfuscation
+
 PE64
-    Operation system: Windows (Vista) [AMD64, 64-bit, Console]
-    Linker: Microsoft Linker (14.43.34810)
-    Compiler: Microsoft Visual C/C++ (19.43.34810) [LTCG/C++]
-    Language: C++
-    Tool: Microsoft Visual Studio (2022, 17.13)
-    (Heur) Packer: Generic [Section #4 (".rsrc") compressed]
-    Debug data: Records [codeview, vc_feature, pogo]
-    (Heur) Debug data: Contains [Absolute PDB path]
+	Operation system: Windows (Vista) [AMD64, 64-bit, Console]
+	Linker: Microsoft Linker (14.43.34810)
+	Compiler: Microsoft Visual C/C++ (19.43.34810) [LTCG/C++]
+	Language: C++
+	Tool: Microsoft Visual Studio (2022, 17.13)
+	(Heur) Packer: Generic [Section #4 (".rsrc") compressed]
+	Debug data: Records [codeview, vc_feature, pogo]
+	(Heur) Debug data: Contains [Absolute PDB path]
 
 #### Screenshots
 

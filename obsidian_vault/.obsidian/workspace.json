@@ -180,12 +180,13 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "bases:Create new base": false
     }
   },
   "active": "58bfb8cbcadf5f95",
   "lastOpenFiles": [
+    "Case Notes/C0004 - Medusa.md",
+    "Untitled.canvas",
     "Attachments/Pasted image 20260718165829.png",
     "Attachments/Pasted image 20260718165613.png",
     "Attachments/Pasted image 20260718165439.png",
@@ -194,7 +195,6 @@
     "Attachments/Pasted image 20260718164541.png",
     "Attachments/Pasted image 20260718160624.png",
     "Attachments/Pasted image 20260718155503.png",
-    "Case Notes/C0004 - Medusa.md",
     "Windows Internals/Imports/WNetGetConnectionW.md",
     "Windows Internals/Imports/SystemParametersInfoW.md",
     "Windows Internals/Imports/GetAsyncKeyState.md",
@@ -225,7 +225,6 @@
     "Windows Internals/Imports",
     "Imports",
     "Vault/Windows Internals/DLLs",
-    "Vault/Attachments/Pasted image 20260714184457.png",
     "Vault/YARA Rules",
     "Vault/Windows Internals",
     "Vault/Tools",

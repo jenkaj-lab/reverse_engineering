@@ -1,0 +1,7 @@
+- Download and install all tools into a folder at the top level of C: drive
+- Edit environment variables to include paths for all command line tools
+    - gcc (C:\msys64\ucrt64\bin)
+    - Floss
+- Import favourites
+- Create a snapshot
+- Turn off network before analysing any malware *
