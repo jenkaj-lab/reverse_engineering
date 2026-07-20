@@ -7,6 +7,8 @@ type: ransomware
 tags:
   - malware
 ---
+https://bazaar.abuse.ch/sample/f40fb93230bb13d6116c03f0181f7ee0c613248035bc42f7b7507f73246cff88/
+
 # Analysis
 The analysis stage is used to gather information and document findings using static and dynamic analysis techniques.
 
@@ -192,15 +194,43 @@ VirusTotal detection ratio
 ## Dynamic Analysis
 ### Behavioral Analysis
 #### Process Tree
+![[Pasted image 20260720223437.png]]
 #### File Activity
+Sample begins by creating mappings for all the required DLLs
+![[Pasted image 20260720225921.png]]
+
+Evidence of networking DLLs which would have definitely been in use had my network been active
+![[Pasted image 20260720230041.png]]
+
+Cookies and browsing history
+![[Pasted image 20260720230227.png]]
+
+Creating wallpaper
+![[Pasted image 20260720230406.png]]
+
+Querying Windows Cache and accessing databases
+![[Pasted image 20260720230509.png]]
+
+Accessing recycle bin
+![[Pasted image 20260720230532.png]]
+
+Creating ransom notes
+![[Pasted image 20260720230745.png]]
+
+Enumeration continues after this, with multiple file access operations followed by access to recycle bin files and encryption of files with the extension `.jacobmccole1967@onionmail_com`
+![[Pasted image 20260720230956.png]]
 #### Registry Activity
+No new keys created. Multiple registry queries and key opens, mainly for cryptographic functions.
 #### Network Traffic
+Network card was disabled prior to analysis.
 #### Persistence
+Nothing seen in autoruns.
 #### Dropped Files
-| File | Location | Hash |
-| ---- | -------- | ---- |
-|      |          |      |
-|      |          |      |
+| File                     | Location                                                                                   | Hash                                                             |
+| ------------------------ | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| output.bmp               | C:\Users\jenkaj\Downloads\f40fb93230bb13d6116c03f0181f7ee0c613248035bc42f7b7507f73246cff88 | 7642ECEAF98639DD6D60B7701C7518D53DC7BAABAC099949473E3739E65B9C6B |
+| HOW_TO_RECOVER_DATA.html | C:\MalwareAnalysis                                                                         | E8FECE1698026FD0B64BF55FF7FDC62F88356AC50414BAE21683BB6FDCCD650E |
+
 ### Screenshots
 
 Running process in CMD
@@ -214,12 +244,21 @@ Downloads folder
 
 Wallpaper
 ![[Pasted image 20260718165829.png]]
+
+The sample queries Windows cryptographic registry keys while using CryptoAPI functions to generate/import encryption keys prior to encrypting user files
+![[Pasted image 20260720231344.png]]
 ### Deep Analysis
 #### IDA Free
 
 
 # Summary
 #### Sample Classification
+Ransomware
 #### Challenges / Difficulty Level
+- Easy
+- Plenty of OSINT available
+- Struggled to identify key information from ProcMon due to the amount of file and registry operations
 #### Lessons Learned
-
+- Ransomware's usage of the Restart Manager
+- Various cryptographic imports
+- I lost regshot data in this because I was clicking around, I should make sure to save the output as I go along because I would have to rerun the sample and capture fresh data to see those results
