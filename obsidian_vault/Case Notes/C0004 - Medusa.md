@@ -258,6 +258,7 @@ Ransomware
 - Easy
 - Plenty of OSINT available
 - Struggled to identify key information from ProcMon due to the amount of file and registry operations
+- Windows Defender pre-emptively quarantined the ransomware, which didn't allow the sample to execute to completion
 #### Lessons Learned
 - Ransomware's usage of the Restart Manager
 - Various cryptographic imports
