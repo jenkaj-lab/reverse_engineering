@@ -7,11 +7,11 @@ Fairly easy challenge. Disassembling the file in IDA gives the answer straight a
 
 ![[Pasted image 20260726171247.png]]
 
-Two scanf functions, both of which are using the %i format specifier used to receive decimal, octal or hexadecimal input. After each function call the return value is stored in eax and compared against a hexadecimal value. In theory, reconstructing the code in C would look something like this:
+Two scanf functions, both of which are using the `%i` format specifier used to receive decimal, octal or hexadecimal input. During each function call the user input is stored in its respective variable, then moved into EAX and compared against a hexadecimal value. In theory, reconstructing the code in C would look something like this:
 
 ![[Pasted image 20260726174154.png]]
 
-The comparand in IDA is showing a hex value, so that's what I've written in code. Input will be decimal so convert the values and then enter the values:
+The comparison constant in IDA is showing a hex value, so that's what I've written in code. Input will be decimal so convert the values and then enter the values:
 
 | Comparand | Hex Value | Decimal Value |
 | --------- | --------- | ------------- |
