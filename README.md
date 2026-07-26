@@ -1,4 +1,6 @@
-This is my portfolio for malware analysis
+This is my portfolio for reverse engineering
+
+| All writeups are written using Obsidian. Images won't display properly in GitHub because they are only referenced in the text. You can still find the referred file named in the related "Attachments" folder, but for the best reading experience I'd recommend loading these in Obsidian.
 
 # Virtual Machines
 ## MalWin
