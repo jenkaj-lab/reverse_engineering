@@ -1,1 +1,0 @@
-Malwin is a custom Windows 10 VM designed for general purpose reverse engineering. This VM got its name before I started doing crackmes and I was only doing malware analysis, so a better name might be "RevWin"... but I'll save that for another day.
