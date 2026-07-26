@@ -1,5 +1,5 @@
-Author: RR7
-Sample: https://crackmes.one/crackme/6a46f20c8a86e4c2c5525631
+Author: #RR7
+Source: https://crackmes.one/crackme/6a46f20c8a86e4c2c5525631
 
 ---
 
