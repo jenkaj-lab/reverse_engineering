@@ -80,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "9f36338f0fccf28c",
@@ -187,6 +188,11 @@
   },
   "active": "ac54b638186aa94f",
   "lastOpenFiles": [
+    "Attachments/Pasted image 20260802163851.png",
+    "Challenges/6a512a5e71ee08cad748dcb2/POC.o",
+    "Attachments/Pasted image 20260802154653.png",
+    "Attachments/Pasted image 20260802152514.png",
+    "Attachments/Pasted image 20260802151823.png",
     "Attachments/Pasted image 20260801195139.png",
     "Attachments/Pasted image 20260801182708.png",
     "Attachments/Pasted image 20260801182607.png",
@@ -197,12 +203,8 @@
     "Challenges/6a539361a27dfa335e4c851d/Writeup.md",
     "Attachments/Pasted image 20260727225058.png",
     "Attachments/Pasted image 20260727224737.png",
-    "Attachments/Pasted image 20260727222915.png",
-    "Attachments/Pasted image 20260726233117.png",
     "Challenges/6a539361a27dfa335e4c851d/POC.o",
     "Challenges/6a539361a27dfa335e4c851d/POC.c",
-    "Attachments/Pasted image 20260726231634.png",
-    "Attachments/Pasted image 20260726230757.png",
     "Challenges/6a46f20c8a86e4c2c5525631/Writeup.md",
     "Challenges/6a539361a27dfa335e4c851d",
     "Challenges/6a46f20c8a86e4c2c5525631/POC.o",
@@ -212,7 +214,6 @@
     "Challenges/6a46f20c8a86e4c2c5525631",
     "Challenges/proof_of_concept.c",
     "Cheatsheet.md",
-    "Challenges/Secret key.md",
-    "Challenges"
+    "Challenges/Secret key.md"
   ]
 }

@@ -103,7 +103,17 @@ cmp     rax, r9
 jz      short loc_1400014BE
 ```
 
-!!! TODO: follow RDX in x64dbg
+Following in x64dbg:
+```
+00007FF6B30E14B0 | 0FBE08                   | movsx ecx,byte ptr ds:[rax]       
+00007FF6B30E14B3 | 44:03C1                  | add r8d,ecx                       
+00007FF6B30E14B6 | 48:FFC0                  | inc rax                           
+00007FF6B30E14B9 | 49:3BC1                  | cmp rax,r9                        
+00007FF6B30E14BC | 75 F2                    | jne level4.7FF6B30E14B0
+```
+
+RAX = 1234
+
 ### ...what value is stored inside R8D?
 
 All opcodes involving R8D before the loop:
@@ -144,7 +154,8 @@ cmova   rdx, rcx
 cmova   rdx, rdi
 ```
 
-!!! TODO: follow RDX in x64dbg
+in x64dbg inside the loop 
+r9=0000007DEC4FF91C
 ### What does the program do with R8D after the loop?
 
 ```
@@ -154,29 +165,107 @@ R8D is multiplied with 0x7B (123 in decimal) and stored in R12D.
 
 ---
 
-Notes:
+I have identified from x64dbg that this loop is actually iterating through the username
 
-ASM flow:
+This second loop iterates over the serial key to ensure it matches. 
+![[Pasted image 20260802151823.png]]
+
+It iterates over the memory address of RBX and compares it against the memory address stored in R14. If they are the same, it exits the loop.
+
+When that loop exits the value at RBP-50 is moved into EAX
 ```
-r8d = 0
+00007FF6B30E1547 | 8B45 B0                  | mov eax,dword ptr ss:[rbp-50]     
+```
+At that point the value is:
+```
+000000B04D3CF800  D2 04 00 00 00 00 00 00 D2 EE 00 00 00 00 00 00
+```
+Which in little endian format (because we are looking at the bytes in memory) is 0x04D2, or 1234 in decimal. Our input serial number:
+![[Pasted image 20260802152514.png]]
 
-for each byte:
-    r8d += byte
+Then EAX is compared against R12D
+```
+00007FF6B30E1551 | 41:3BC4                  | cmp eax,r12d                      
+```
+R12D at this point is `D740`, which is 55104 in decimal.
 
-r12d = r8d * 123
+---
+
+We know from earlier in the program that the username is processed byte-by-byte in the first loop. Each byte is added to `R8D`, making `R8D` the sum of the username's character values. After the loop, `R8D` is multiplied by `0x7B` (123 decimal) and stored in `R12D`.
+
+The entered serial key is then loaded into `EAX`:
+
+```
+mov eax,dword ptr [rbp-50]
 ```
 
-Pseudocode:
-```
-Input:
-    Username
+and compared against `R12D`:
 
-Algorithm:
-    sum = 0
-
-    for each character:
-        sum += character_value
-
-    expected_serial = sum * 123
 ```
+cmp eax,r12d
 ```
+
+Therefore, `R12D` represents the expected serial value generated from the username. The program succeeds only when the user-provided serial (`EAX`) matches this calculated value.
+
+---
+
+So basically the username is used in a calculation to match the value of the serial key. If this value does not match the serial key, and the serial key is not correct, the program will fail.
+
+We know the serial key is 55104 so we just need the sum of the username to add up to 55104 to retrieve the flag. To work this out we can divide 55104 by 123, which gives us 448. Then we need to figure out what combination of ASCII characters gives us 448. `BBBBBB4` works here.
+
+B + B + B + B + B + B + 4 is the same as 66 + 66 + 66 + 66 + 66 + 66 + 52 which is equal to 448
+448 * 123 = 55104
+
+![[Pasted image 20260802154653.png]]
+
+---
+
+Reconstructing the code would look something like this:
+
+``` C
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main()
+{
+    int sum = 0;
+    char username[100];
+    char actual_serial_key[] = "55104";
+    char user_serial_key[100];
+    printf("Enter Username: ");
+    scanf("%99s", username);
+    printf("Enter Serial Key (numbers only): ");
+    scanf("%99s", user_serial_key);
+
+    for (int i = 0; i < strlen(username); i++)
+    {
+        sum += username[i];
+    }
+
+    sum = sum*123;
+
+    if (strcmp(user_serial_key, actual_serial_key) == 0 && sum == 55104)
+    {
+       printf("[+] Success! Your decrypted flag is: ");
+
+        char encrypted_flag[] = {0x34, 0x08, 0x0B, 0x11, 0x02, 0x03, 0x46, 0x00};
+
+        char key = atoi(user_serial_key) ^ 0x34;
+
+        for (int i = 0; i < sizeof(encrypted_flag) - 1; i++)
+        {
+            encrypted_flag[i] ^= key;
+        }
+
+        printf("%s\n", encrypted_flag);
+    }
+    else
+    {
+        printf("[-] Access Denied. Decrypted output: %d\n", sum);
+    }
+}
+```
+
+![[Pasted image 20260802163851.png]]
+
