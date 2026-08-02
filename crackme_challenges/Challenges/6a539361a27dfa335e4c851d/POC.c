@@ -21,14 +21,3 @@ int main()
         return 0;
     }
 }
-
-
-/*
-or eax, 1
-add ecx, 1
-imul eax,ebx
-mov byte ptr ds:[ecx],al
-movzx ebx,byte ptr ds:[ecx+1]
-test bl,bl
-jne crackmes.402310
-*/

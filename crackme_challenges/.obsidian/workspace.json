@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "57116079da55102f",
+            "id": "ac54b638186aa94f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Challenges/6a539361a27dfa335e4c851d/Writeup.md",
+                "file": "Challenges/6a512a5e71ee08cad748dcb2/Writeup.md",
                 "mode": "source",
                 "source": false
               },
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -183,23 +185,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "57116079da55102f",
+  "active": "ac54b638186aa94f",
   "lastOpenFiles": [
+    "Attachments/Pasted image 20260801195139.png",
+    "Attachments/Pasted image 20260801182708.png",
+    "Attachments/Pasted image 20260801182607.png",
+    "Attachments/Pasted image 20260801182513.png",
+    "Attachments/Pasted image 20260731223533.png",
+    "Challenges/6a512a5e71ee08cad748dcb2/Writeup.md",
+    "Challenges/6a512a5e71ee08cad748dcb2",
+    "Challenges/6a539361a27dfa335e4c851d/Writeup.md",
+    "Attachments/Pasted image 20260727225058.png",
+    "Attachments/Pasted image 20260727224737.png",
+    "Attachments/Pasted image 20260727222915.png",
     "Attachments/Pasted image 20260726233117.png",
     "Challenges/6a539361a27dfa335e4c851d/POC.o",
     "Challenges/6a539361a27dfa335e4c851d/POC.c",
     "Attachments/Pasted image 20260726231634.png",
     "Attachments/Pasted image 20260726230757.png",
-    "Attachments/Pasted image 20260726230649.png",
-    "Attachments/Pasted image 20260726230634.png",
-    "Attachments/Pasted image 20260726225953.png",
-    "Attachments/Pasted image 20260726225140.png",
-    "Attachments/Pasted image 20260726223608.png",
-    "Attachments/Pasted image 20260726221525.png",
-    "Attachments/Pasted image 20260726221314.png",
-    "Attachments/Pasted image 20260726221001.png",
     "Challenges/6a46f20c8a86e4c2c5525631/Writeup.md",
-    "Challenges/6a539361a27dfa335e4c851d/Writeup.md",
     "Challenges/6a539361a27dfa335e4c851d",
     "Challenges/6a46f20c8a86e4c2c5525631/POC.o",
     "Challenges/6a46f20c8a86e4c2c5525631/POC.c",
@@ -209,7 +213,6 @@
     "Challenges/proof_of_concept.c",
     "Cheatsheet.md",
     "Challenges/Secret key.md",
-    "Challenges",
-    "Attachments"
+    "Challenges"
   ]
 }

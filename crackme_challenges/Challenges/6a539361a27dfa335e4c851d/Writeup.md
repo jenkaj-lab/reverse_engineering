@@ -162,4 +162,3 @@ I'm basing this on the following observations
 - Multiple references to %99s - leading me to believe the input string is 100 characters with one reserved for the terminating `\0`
 
 This program isnt finished because it doesn't do any encryption yet, but I'm going to leave it there for today.
-
